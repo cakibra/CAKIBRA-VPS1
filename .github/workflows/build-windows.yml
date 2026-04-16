@@ -64,7 +64,7 @@ jobs:
 
       - name: Build Tauri app
         shell: powershell
-        run: .\node_modules\.bin\tauri.cmd build -- --bundles nsis
+        run: .\node_modules\.bin\tauri.cmd build --bundles nsis
 
       - name: Upload installer artifact
         uses: actions/upload-artifact@v4
